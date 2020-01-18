@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+class Parent{
+	void show()
+	{
+		System.out.println("Parent's show()");
+	}
+}
+
+class Child extends Parent{
+	void show()
+	{
+		System.out.println("Child's show()");
+	}
+}
+
+public class Solution1 {
+	public static void main(String[] args) throws Exception
+	{
+		Scanner in= new Scanner(Paths.get("..\\text\\01f1.txt"));
+		System.out.println("in");
+	}
+}

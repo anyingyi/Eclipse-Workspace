@@ -1,0 +1,19 @@
+import java.util.Scanner;	//import a class Scanner from package
+
+public class ComputeArea {
+	public static void main(String[] args) {
+		
+		//final double PI=3.1415926;
+		
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("enter a number ofr radius: ");
+		
+		int seconds=input.nextInt();
+		
+		int minutes=seconds/60;
+		seconds=seconds%60;
+		
+		System.out.println(minutes+" minutes "+seconds+" seconds ");
+	}
+}

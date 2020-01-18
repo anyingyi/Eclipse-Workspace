@@ -1,0 +1,52 @@
+
+public class Solution {
+	int num=4;
+	int mcolor=3;
+	int count=0;
+	int graph[][] = {{0, 1, 1, 1}, 
+            {1, 0, 1, 0}, 
+            {1, 1, 0, 1}, 
+            {1, 0, 1, 0}, 
+	};
+	int color[]=new int [5];
+	
+	boolean isok(int v)
+	{
+		for(int i=0;i<num;i++)
+		{
+			if(graph[v][i]==1&&color[v]==color[i])
+				return false;
+		}
+		return true;
+		
+	}
+	
+	void dsp(int v)
+	{
+		if(v>=num)
+		{
+			for(int i=0;i<num;i++)
+				System.out.print(color[i]+" ");
+			System.out.print('\n');
+		}
+			
+		
+		else
+		{
+			for(int i=1;i<=mcolor;i++)
+			{
+				color[v]=i;
+				if(isok(v))
+					dsp(v+1);
+				color[v]=0;
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		Solution a=new Solution();
+		a.dsp(1);
+		//System.out.println(a.count);
+	}
+}
+
