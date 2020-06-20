@@ -46,6 +46,13 @@ public class Solution {
 		optimization(Solution.densityList);
 	}
 	
+	
+	
+	/**
+	 * greedy remove elements
+	 * 
+	 * @return
+	 */
 	public void evalWithGreedyRepair()
 	{
 		int[] items=prob.getDensityOrder();
@@ -83,6 +90,11 @@ public class Solution {
 	}
 	
 	
+	/**
+	 * greedy add elements
+	 * 
+	 * @return
+	 */
 	public void optimization(List<Integer> itemList)
 	{
 		for(int i=0;i<itemList.size();i++) {
@@ -96,17 +108,22 @@ public class Solution {
 		}
 	}
 	
+	/**
+	 * mainly process function of SA
+	 * 
+	 * @return the best solution
+	 */
 	public static Solution SA(Solution solution)
 	{
 		Solution current=new Solution(solution);
 		Solution best=new Solution(solution);
 		final int MAX_G=10000;
-		final int SCHEDULE_LENGTH=1000;
+		//final int SCHEDULE_LENGTH=1000;
 		double t=1000;
 		double alpha=0.99;
 		for(int q=0;q<MAX_G;q++)
 		{
-			for(int k=0;k<SCHEDULE_LENGTH;k++)
+			//for(int k=0;k<SCHEDULE_LENGTH;k++)
 			{
 				Solution neighbor=current.randNeighbor();
 				double p=Math.random();
@@ -150,7 +167,7 @@ public class Solution {
 		best=SA(s);
 		for(int i=0;i<s.prob.itemNumber;i++)
 		{
-			//best.match[i];
+			System.out.print(best.match[i]+" ");
 		}
 		System.out.println(best.value);
 	}

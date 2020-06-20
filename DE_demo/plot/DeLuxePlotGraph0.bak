@@ -1,0 +1,147 @@
+package DeApp1.plot;
+
+import java.awt.*;         // Import all classes from the java.awt package
+                           // AWT is the Abstract Window Toolkit. The AWT
+import java.io.*;
+import DeApp1.screen.*;           // Import screens
+import DeApp1.de.*;
+import DeApp1.ptplot.*;
+
+
+
+//public class DeLuxePlotGraph0 extends Canvas
+public class DeLuxePlotGraph0 extends Plot
+/***********************************************************
+**                                                        **
+**                                                        **
+** Authors:            Rainer Storn                       **
+**                                                        **
+** Date:               1/23/99                            **
+**                                                        **
+** Use PlotGraph2 to adjust the graphics.                 **
+***********************************************************/
+{
+
+	protected DEScreen deScreen;
+
+    double best[];
+	double best_old[];
+	protected int initFlag = 1;
+
+	int plotting_samples  = 60;  // (or 60) make this problem dependent!
+	int tolerance_samples = 300;
+
+	protected double min_x = -2;        // Relative coordinates
+	protected double max_x = +2;
+	protected double min_y = -1;
+	protected double max_y = +10;
+
+
+
+  public DeLuxePlotGraph0(DEScreen father, int width, int height)
+  /***********************************************************
+  ** Set size of the plot and define the axes.              **
+  ***********************************************************/
+  {
+	deScreen = father;
+	//int dim  = deScreen.getDimension();
+	//best_old = deScreen.getBest();
+	best_old = new double [100];
+
+    //minSize  = new Dimension(width-margin,height-margin);  //set minimum size
+	this.setXRange(min_x,max_x);
+	this.setYRange(min_y,max_y);
+	this.setGrid(false);
+	this.setNumSets(4);
+	this.setPointsPersistence(plotting_samples);
+	show();
+  }
+
+  public double polynomial (double temp[], double x, int dim)
+  /***********************************************************
+  ** Evaluate the current polynomial.                       **
+  ***********************************************************/
+  {
+    double y   = temp[0];
+    for (int j = 1;  j < dim;  j++)
+	{
+	  y = x * y + temp[j];
+	}
+
+    return y;  
+  }
+
+
+  public void paint (Graphics g)
+  /*******************************************************
+  ** Whenever the component is exposed anew, this method *
+  ** is called.                                         **
+  *******************************************************/
+  {
+	if (initFlag == 1)
+	{
+	  init();	// initializing with every paint() call 
+	        // allows for resizing of the plot screen
+	  initFlag = 0;
+	}
+  }
+
+  public void refreshImage()
+  /***********************************************************
+  ** Update function which recomputes the variable screen   **
+  ** image.                                                 **
+  ***********************************************************/
+  {
+	int dim  = deScreen.getDimension();
+	best     = deScreen.getBest();
+    double coefficient;
+	double x2;
+	boolean first_old = true;
+	boolean first     = true;
+	int i;
+
+    //----Colors--------------
+	    //0: white
+        //1: red
+        //2: blue
+        //3: green-ish
+        //4: black
+        //5: orange
+        //6: cadetblue4
+        //7: coral
+        //8: dark green-ish
+        //9: sienna-ish
+        //10: grey-ish
+        //11: cyan-ish
+
+    
+	coefficient = (max_x - min_x) / ((double) plotting_samples);
+
+	//-----first erase old graph--------------------------
+   /* for (i = 0;  i <= plotting_samples;  i++)
+    {
+      x2 = min_x + ((double)i) * coefficient;
+	  this.addPoint(0,x2,polynomial (best_old, x2, dim),!first_old);
+	  first_old = false;
+    } */
+
+	//-----now plot new graph-----------------------------
+    for (i = 0;  i <= plotting_samples;  i++)
+    {
+      x2 = min_x + ((double)i) * coefficient;
+	  this.addPoint(4,x2,polynomial (best, x2, dim),!first);
+	  first = false;
+    }	
+	paint(_graphics);
+
+	//---save parameters which were used for last plot----
+	for (i=0; i<dim; i++) best_old[i] = best[i];
+  }
+
+
+
+}
+
+
+
+

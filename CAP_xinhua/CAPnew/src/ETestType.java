@@ -1,0 +1,4 @@
+public enum ETestType {
+	MULTIPLE_INSTANCE,
+	PARAMETER_TUNNING
+}

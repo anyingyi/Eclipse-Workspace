@@ -11,9 +11,9 @@ public class Problem {
 	
 	int itemNumber;
 	double capacity;
+	double bestValue;
 	double[] values;
 	double[] weights;
-	double bestValue;
 	double[] density;
 	int[] densityOrder;
 	int[] valueOrder;
@@ -32,8 +32,10 @@ public class Problem {
 		File data=new File(fileName);
 		Scanner in=new Scanner(data);
 		itemNumber=in.nextInt();
-		in.nextLine();
+		in.nextInt();
 		bestValue=in.nextDouble();
+		values=new double[itemNumber];
+		weights=new double[itemNumber];
 		for(int i=0;i<itemNumber;i++)
 		{
 			values[i]=in.nextDouble();

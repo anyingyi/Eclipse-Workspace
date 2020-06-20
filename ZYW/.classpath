@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="LBSA-TSP/ELBSA4TSP/src"/>
+	<classpathentry kind="src" path="QAP/QAP"/>
+	<classpathentry kind="src" path="SA40-1KP-master/SA40-1KP-master/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
