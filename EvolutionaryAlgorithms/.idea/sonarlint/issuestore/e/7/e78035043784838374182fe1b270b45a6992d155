@@ -1,0 +1,20 @@
+
+r
+java:S1845>"]Rename field "m_A" to prevent any misunderstanding/clash with field "m_a" defined on line 57.(°ýêw
+[
+java:S11244"EReorder the modifiers to comply with the Java Language Specification.(Ì€¨Æ
+h	java:S1168"NRename this field "m_o" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùµ‚§øÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(åÙäˆøÿÿÿÿ
+s
+java:S1845?"]Rename field "m_B" to prevent any misunderstanding/clash with field "m_b" defined on line 58.(©¤íâ
+b	java:S116>"NRename this field "m_A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ýêw
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÄÊÞŒ
+c	java:S116?"NRename this field "m_B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©¤íâ
+c	java:S116:"NRename this field "m_b" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Æ¹Ð
+`
+java:S11245"EReorder the modifiers to comply with the Java Language Specification.(¸î»¢ûÿÿÿÿ
+k	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ŸŸüùÿÿÿÿ
+k	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Á¡¤úÿÿÿÿ
+h	java:S1169"NRename this field "m_a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Å¸™ýÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(¶Þàšùÿÿÿÿ
+]	java:S125x"<This block of commented-out lines of code should be removed.(ñÞ¼‘ýÿÿÿÿ8º¿š€­.

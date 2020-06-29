@@ -8,18 +8,19 @@ import java.util.Scanner;
 public class Solution implements Comparable<Solution> {
 	private double[] x;
 	private double[] velocity;
-	private double cost;
+	private double cost=0;
+	protected int trailCount=0;
 	static Random rand=new Random();
 	
 	Solution(){
 		double xMin=Simulations.xMin;
 		double xMax=Simulations.xMax;
 		int dimension=Simulations.dimension;
-		x=new double[dimension];
-		velocity=new double[dimension];
+		this.x=new double[dimension];
+		this.velocity=new double[dimension];
 		for(int i=0;i<dimension;i++) {
-			x[i]=xMin+rand.nextDouble()*(xMax-xMin);
-			velocity[i]=rand.nextDouble()*(xMin+rand.nextDouble()*(xMax-xMin));
+			this.x[i]=xMin+rand.nextDouble()*(xMax-xMin);
+			this.velocity[i]=rand.nextDouble()*(xMin+rand.nextDouble()*(xMax-xMin));
 		}
 		
 		evaluate();
@@ -31,9 +32,12 @@ public class Solution implements Comparable<Solution> {
 		evaluate();
 	}
 	
+	Solution copy() {
+		return  new Solution(this.x,this.velocity);
+	}
 	
 	void evaluate() {
-		funcRosenbrock();
+		funcSphere();
 	}
 	
 	/**
@@ -43,7 +47,7 @@ public class Solution implements Comparable<Solution> {
 	 */
 	void funcMicha()
 	{
-		cost=-Math.sin(x[0])*Math.pow(Math.sin(x[0]*x[0]/Math.PI), 20)-Math.sin(x[1])*Math.pow(Math.sin(2*x[1]*x[1]/Math.PI), 20);
+		this.cost=-Math.sin(x[0])*Math.pow(Math.sin(x[0]*x[0]/Math.PI), 20)-Math.sin(x[1])*Math.pow(Math.sin(2*x[1]*x[1]/Math.PI), 20);
 	}
 	
 	/**
@@ -53,7 +57,7 @@ public class Solution implements Comparable<Solution> {
 	 */
 	void funcSphere() {
 		for(int i=0;i<Simulations.dimension;i++)
-			cost+=x[i]*x[i];
+			this.cost+=x[i]*x[i];
 	}
 	
 	/**
@@ -63,7 +67,7 @@ public class Solution implements Comparable<Solution> {
 	 */
 	void funcRosenbrock() {
 		for(int i=0;i<Simulations.dimension-1;i++)
-			cost+=100*(Math.pow(x[i+1]-x[i]*x[i], 2))+(x[i]-1)*(x[i]-1);
+			this.cost+=100*(Math.pow(x[i+1]-x[i]*x[i], 2))+(x[i]-1)*(x[i]-1);
 	}
 	
 	public static double[] adjustValue(double x,double v) {
@@ -104,7 +108,7 @@ public class Solution implements Comparable<Solution> {
 	}
 	
 	public static void main(String[] args) {
-		Solution best=Methods.dimensionCuckoo();
+		Solution best=Methods.basicDE();
 		System.out.println(best);
 	}
 }

@@ -6,7 +6,7 @@ public class Simulations {
 	
 	public static final double xMin = -2;
 	public static final double xMax = 2;
-	public static int MAX_G=500;
+	public static int MAX_G=3000;
 	public static int popSize=30;
 	public static int dimension=30;	//dimension of object function
 	
@@ -26,6 +26,9 @@ public class Simulations {
 	public static final double beta = 1.5;
 	public static final double Pa = 0.25;
 	public static final double Pc = 0.5;
+	
+	//artificial bees
+	public static final int threshold = 10;
 	
 	
 }

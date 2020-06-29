@@ -1,0 +1,37 @@
+
+^	java:S125"<This block of commented-out lines of code should be removed.(•‰¢‚ûÿÿÿÿ8ãÄƒí¬.
+E
+java:S1659"#Declare "bestx" on a separate line.(ó”Å¢ıÿÿÿÿ8”•’ë¬.
+o	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ ÆÉüÿÿÿÿ8§—¯ì¬.
+V	java:S106’"9Replace this use of System.out or System.err by a logger.(¾‹·¸8§—¯ì¬.
+o	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âû—ùÿÿÿÿ8µ‹«ë¬.
+G
+java:S1659,"%Declare "r2value" on a separate line.(··Íçøÿÿÿÿ8µ‹«ë¬.
+D
+java:S1659""Declare "step" on a separate line.(ó”Å¢ıÿÿÿÿ8”•’ë¬.
+]	java:S125p"<This block of commented-out lines of code should be removed.(ˆÖÜşÿÿÿÿ8“Ú½ë¬.
+X	java:S125t"<This block of commented-out lines of code should be removed.(ßŞ´Ë8ŞÈ¦ì¬.
+]	java:S125v"<This block of commented-out lines of code should be removed.(ÿÃ†õùÿÿÿÿ8¯ãŠ¨­.
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æû…²ûÿÿÿÿ8›§ˆë¬.
+F
+java:S1659,"$Declare "nvalue" on a separate line.(··Íçøÿÿÿÿ8µ‹«ë¬.
+F
+java:S1659,"$Declare "cvalue" on a separate line.(··Íçøÿÿÿÿ8µ‹«ë¬.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¢Šœıÿÿÿÿ8§—¯ì¬.
+H
+java:S1659"&Declare "currentx" on a separate line.(ó”Å¢ıÿÿÿÿ8”•’ë¬.
+D
+java:S1659""Declare "newx" on a separate line.(ó”Å¢ıÿÿÿÿ8”•’ë¬.
+h
+java:S2184‚"ECast one of the operands of this subtraction operation to a "double".(ƒ¨ü·ıÿÿÿÿ8§—¯ì¬.
+A
+java:S1659"Declare "v" on a separate line.(ó”Å¢ıÿÿÿÿ8”•’ë¬.
+h
+java:S2184‚"ECast one of the operands of this subtraction operation to a "double".(ƒ¨ü·ıÿÿÿÿ8§—¯ì¬.
+d
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(éŞÒ¹8§—¯ì¬.
+F
+java:S1659,"$Declare "rvalue" on a separate line.(··Íçøÿÿÿÿ8µ‹«ë¬.
+r	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€Ûª¿üÿÿÿÿ8Şû‹ì¬.
+A
+java:S1659"Declare "j" on a separate line.(¦¢Éëùÿÿÿÿ8”•’ë¬.

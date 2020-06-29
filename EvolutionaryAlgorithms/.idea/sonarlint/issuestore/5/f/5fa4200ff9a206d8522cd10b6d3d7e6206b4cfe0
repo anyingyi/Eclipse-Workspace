@@ -1,0 +1,12 @@
+
+[
+java:S11244"EReorder the modifiers to comply with the Java Language Specification.(”Ø¤ö
+k	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â™•Æþÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(¶Þàšùÿÿÿÿ
+[
+java:S11245"EReorder the modifiers to comply with the Java Language Specification.(‘Éü
+U
+java:S1854Q":Remove this useless assignment to local variable "result".(×Û­®ùÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÄÊÞŒ
+V	java:S125!"<This block of commented-out lines of code should be removed.(åÙäˆøÿÿÿÿ
+]	java:S125W"<This block of commented-out lines of code should be removed.(†ÉéŠúÿÿÿÿ8Ö”€­.

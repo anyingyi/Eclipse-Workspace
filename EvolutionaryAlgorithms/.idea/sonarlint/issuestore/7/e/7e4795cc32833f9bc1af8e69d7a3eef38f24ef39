@@ -1,0 +1,7 @@
+
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(¸œ½Îûÿÿÿÿ8¥Ô­.
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(¾ğÀò8…İ×Ó­.
+C
+java:S1068"&Remove this unused "bw" private field.(ºöµ”8—ÑÓ­.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(“–ış8ÌÕ…Ô­.

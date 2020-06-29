@@ -1,5 +1,7 @@
 
 public class Problem {
+	double cost;
+	double []x;
 	/**
 	 * bivariate Michaelwicz function.
 	 * has a global minimum f∗ ≈ −1.8013 at (2.20319, 1.57049). 

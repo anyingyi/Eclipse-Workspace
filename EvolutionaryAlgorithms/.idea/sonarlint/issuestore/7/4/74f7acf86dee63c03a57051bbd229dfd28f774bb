@@ -1,0 +1,188 @@
+
+g	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Š•
+d	java:S100Ô"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éáªÎ
+a
+java:S1124Á"EReorder the modifiers to comply with the Java Language Specification.(¯˜Òæüÿÿÿÿ
+[
+java:S1124‹"EReorder the modifiers to comply with the Java Language Specification.(Öñßq
+V	java:S106ş"9Replace this use of System.out or System.err by a logger.(¶“ƒ¤8úåóé¬.
+V	java:S106ü"9Replace this use of System.out or System.err by a logger.(Ù¬®³8§Äóé¬.
+`
+java:S1124a"EReorder the modifiers to comply with the Java Language Specification.(Ü¬·¶øÿÿÿÿ
+a
+java:S1124Ä"EReorder the modifiers to comply with the Java Language Specification.(İ¥à£ûÿÿÿÿ
+\
+java:S1124€"EReorder the modifiers to comply with the Java Language Specification.(Ğ†Ô
+a
+java:S1124ç"EReorder the modifiers to comply with the Java Language Specification.(­”±…ûÿÿÿÿ
+[	java:S106™"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8’õé¬.
+W	java:S125¸"<This block of commented-out lines of code should be removed.(Ğûè¾øÿÿÿÿ
+l	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ñì¨ûÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(Ğûè¾øÿÿÿÿ
+Z
+java:S1124A"EReorder the modifiers to comply with the Java Language Specification.(€ŸÃ~
+\
+java:S1124ä"EReorder the modifiers to comply with the Java Language Specification.(¨Š•
+g	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éø†Å
+f	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼‘o
+=
+java:S1659±"&Declare "curr_sum" on a separate line.(éø†Å
+l	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Ï…™ûÿÿÿÿ
+i	java:S100Ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ù•úüÿÿÿÿ
+:
+java:S1659à"#Declare "currX" on a separate line.(æ‹øÒ
+F
+java:S1148®"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ï“àé¬.
+V	java:S106Š"9Replace this use of System.out or System.err by a logger.(¶“ƒ¤8İ›ôé¬.
+7
+java:S2129Ô" Remove this "Double" constructor(øÊñä
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÄÊŞŒ
+g	java:S117ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–®û¹
+d	java:S100ı"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ğ¨‡
+c	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÌÔA
+\
+java:S1124Ô"EReorder the modifiers to comply with the Java Language Specification.(éáªÎ
+F
+java:S1148¼"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8äïàé¬.
+\
+java:S1124İ"EReorder the modifiers to comply with the Java Language Specification.(ã‘À”
+V	java:S106ì"9Replace this use of System.out or System.err by a logger.(ö¦‘Ğ8İšñé¬.
+F
+java:S1148û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÉÇİé¬.
+d	java:S100»"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é·ğ
+m
+java:S3008s"RRename this field "m_iSqrt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—·îĞûÿÿÿÿ
+l	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò“çÉøÿÿÿÿ
+\
+java:S1124¥"EReorder the modifiers to comply with the Java Language Specification.(‹Ëàò
+g	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éø†Å
+F
+java:S1148í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ï‰Üé¬.
+f	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šİ/
+g	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ‰©é
+g	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Š•
+V	java:S125#"<This block of commented-out lines of code should be removed.(¶Şàšùÿÿÿÿ
+Z
+java:S1124l"EReorder the modifiers to comply with the Java Language Specification.(¸ÑØt
+a
+java:S1124ì"EReorder the modifiers to comply with the Java Language Specification.(à“€üÿÿÿÿ
+`
+java:S1124e"EReorder the modifiers to comply with the Java Language Specification.(¯’ƒÉùÿÿÿÿ
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(èİÎÑşÿÿÿÿ
+d	java:S100¯"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½…¡Ğ
+>
+java:S1659±"'Declare "outer_sum" on a separate line.(éø†Å
+a
+java:S1124Ù"EReorder the modifiers to comply with the Java Language Specification.(¬ñ‡®úÿÿÿÿ
+h	java:S116v"SRename this field "m_biases" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—åè
+a
+java:S1124Ğ"EReorder the modifiers to comply with the Java Language Specification.(ËŸ££ùÿÿÿÿ
+E
+java:S1874Ô".Remove this use of "Double"; it is deprecated.(øÊñä
+W	java:S125÷"<This block of commented-out lines of code should be removed.(Ğûè¾øÿÿÿÿ
+\
+java:S1124—"EReorder the modifiers to comply with the Java Language Specification.(ååÌÓ
+a
+java:S1124¢"EReorder the modifiers to comply with the Java Language Specification.(¿ç—¸ùÿÿÿÿ
+a
+java:S1124³"EReorder the modifiers to comply with the Java Language Specification.(¨ã¼şÿÿÿÿ
+[
+java:S1124©"EReorder the modifiers to comply with the Java Language Specification.(Šİ/
+a
+java:S1124Ê"EReorder the modifiers to comply with the Java Language Specification.(„Ï…™ûÿÿÿÿ
+F
+java:S1874Ó"/Remove this use of "Integer"; it is deprecated.(Õ’’
+8
+java:S2129Ó"!Remove this "Integer" constructor(Õ’’
+[
+java:S1124>"EReorder the modifiers to comply with the Java Language Specification.(Ûø»Å
+i	java:S100ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­”±…ûÿÿÿÿ
+\
+java:S1124°"EReorder the modifiers to comply with the Java Language Specification.(¢ˆë¦
+g	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éø†Å
+l	java:S117ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷äÊ°ùÿÿÿÿ
+l	java:S117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ç—¸ùÿÿÿÿ
+[
+java:S1124Ò"EReorder the modifiers to comply with the Java Language Specification.(«Ó©&
+Q
+java:S1128:"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8‚…Şé¬.
+a
+java:S1124ğ"EReorder the modifiers to comply with the Java Language Specification.(ö÷Æ­ûÿÿÿÿ
+`
+java:S1124b"EReorder the modifiers to comply with the Java Language Specification.(ı©ñ«ûÿÿÿÿ
+[
+java:S1124˜"EReorder the modifiers to comply with the Java Language Specification.(Ä¥õ
+[
+java:S3878Ò"8Remove this array creation and simply pass the elements.(ƒğø¥úÿÿÿÿ8Şâãé¬.
+a
+java:S1124“"EReorder the modifiers to comply with the Java Language Specification.(şïÜãøÿÿÿÿ
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(æè…†ûÿÿÿÿ
+[	java:S106–"9Replace this use of System.out or System.err by a logger.(ò«”èüÿÿÿÿ8İóôé¬.
+`
+java:S1124@"EReorder the modifiers to comply with the Java Language Specification.(´üäşÿÿÿÿ
+[
+java:S1124È"EReorder the modifiers to comply with the Java Language Specification.(ÓÌÔA
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢’õè
+F
+java:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚…Şé¬.
+;
+java:S3010"$Remove this assignment of "m_iSqrt".(€¦Ïˆ
+c	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ó©&
+;
+java:S3010†"$Remove this assignment of "m_iSqrt".(»æ®¸
+F
+java:S1148Ø"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Œµäé¬.
+a
+java:S1124Ÿ"EReorder the modifiers to comply with the Java Language Specification.(…ù•úüÿÿÿÿ
+W	java:S125¨"<This block of commented-out lines of code should be removed.(Ğûè¾øÿÿÿÿ
+`
+java:S1124h"EReorder the modifiers to comply with the Java Language Specification.(‹—¦øÿÿÿÿ
+[
+java:S1124o"EReorder the modifiers to comply with the Java Language Specification.(ºÍ©ã
+\
+java:S1124¼"EReorder the modifiers to comply with the Java Language Specification.(“„™
+\
+java:S1124Š"EReorder the modifiers to comply with the Java Language Specification.(Ğİ¥’
+[
+java:S1124?"EReorder the modifiers to comply with the Java Language Specification.(ÌÚóü
+i	java:S100Ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËŸ££ùÿÿÿÿ
+d	java:S100İ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã‘À”
+`
+java:S1124g"EReorder the modifiers to comply with the Java Language Specification.(×šÍÅûÿÿÿÿ
+o	java:S115?"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÌÚóü
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ã—ØC8Ü¾õé¬.
+3
+java:S2386B"Make this member "protected".(£§÷è
+g	java:S117ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉŒñ
+V	java:S106”"9Replace this use of System.out or System.err by a logger.(¤–Øˆ8ªÑôé¬.
+N
+java:S1197"8Move the array designator from the variable to the type.(ØÀ™0
+a
+java:S1124ü"EReorder the modifiers to comply with the Java Language Specification.(«ƒû¦øÿÿÿÿ
+a
+java:S1124†"EReorder the modifiers to comply with the Java Language Specification.(Àˆ¢ùÿÿÿÿÿ
+`
+java:S1124s"EReorder the modifiers to comply with the Java Language Specification.(—·îĞûÿÿÿÿ
+\
+java:S1124¯"EReorder the modifiers to comply with the Java Language Specification.(½…¡Ğ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ØÀ™0
+a	java:S112™"FDefine and throw a dedicated exception instead of using a generic one.(èİÎÑşÿÿÿÿ
+l	java:S117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù€Ò„ÿÿÿÿÿ
+n
+java:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Â‹š—şÿÿÿÿ
+[
+java:S1124B"EReorder the modifiers to comply with the Java Language Specification.(£§÷è
+t	java:S115b"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ı©ñ«ûÿÿÿÿ
+\
+java:S1124ı"EReorder the modifiers to comply with the Java Language Specification.(°ğ¨‡
+a
+java:S1124ò"EReorder the modifiers to comply with the Java Language Specification.(Ï‡ßúÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(åÙäˆøÿÿÿÿ
+g	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éáªÎ
+a
+java:S1124·"EReorder the modifiers to comply with the Java Language Specification.(±¬¾Ïşÿÿÿÿ
+\
+java:S1124»"EReorder the modifiers to comply with the Java Language Specification.(é·ğ
+l	java:S117æ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â‹š—şÿÿÿÿ

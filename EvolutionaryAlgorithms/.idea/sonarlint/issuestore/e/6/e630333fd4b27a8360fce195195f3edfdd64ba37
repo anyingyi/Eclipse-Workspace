@@ -1,0 +1,32 @@
+
+b	java:S116V"NRename this field "m_z" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¿³{
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÄÊÞŒ
+Z
+java:S11246"EReorder the modifiers to comply with the Java Language Specification.(Úæð
+h	java:S116A"NRename this field "m_M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Œæôýÿÿÿÿ
+k	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º’Ñþÿÿÿÿ
+q	java:S116P"WRename this field "m_testPointM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎŒ…²úÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(åÙäˆøÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(¶Þàšùÿÿÿÿ
+d	java:S116W"ORename this field "m_zM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þ·´Â
+p	java:S116O"VRename this field "m_testPoint" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÞÌýùúÿÿÿÿ
+m	java:S116F"SRename this field "m_lambda" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý˜Žøÿÿÿÿ
+`
+java:S1124;"EReorder the modifiers to comply with the Java Language Specification.(µÛÂ˜ûÿÿÿÿ
+m	java:S116K"XRename this field "m_func_biases" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ž‚©
+V
+java:S1854Ž":Remove this useless assignment to local variable "result".(×Û­®ùÿÿÿÿ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þËžãøÿÿÿÿ
+[
+java:S11247"EReorder the modifiers to comply with the Java Language Specification.(ÆÃß¸
+V	java:S106µ"9Replace this use of System.out or System.err by a logger.(á¶„“8³ˆÁê¬.
+k	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚúÔ¸øÿÿÿÿ
+h	java:S116@"NRename this field "m_o" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”·¨£ýÿÿÿÿ
+[
+java:S11248"EReorder the modifiers to comply with the Java Language Specification.(Ãí 
+f	java:S116B"RRename this field "m_sigma" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µƒàU
+k	java:S116Q"QRename this field "m_fmax" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¸Ÿ×úÿÿÿÿ
+[
+java:S11244"EReorder the modifiers to comply with the Java Language Specification.(òÿÑé
+h	java:S116U"NRename this field "m_w" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÆ§üÿÿÿÿ
+^	java:S125’"<This block of commented-out lines of code should be removed.(†ÉéŠúÿÿÿÿ8™¼œ€­.

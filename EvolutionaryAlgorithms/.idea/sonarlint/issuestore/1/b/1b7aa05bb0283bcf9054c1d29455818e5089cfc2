@@ -1,0 +1,24 @@
+
+\	java:S899";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8Æâñı¬.
+k
+java:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8Æâñı¬.
+]	java:S125W"<This block of commented-out lines of code should be removed.(ñí¿–üÿÿÿÿ8Æâñı¬.
+E
+java:S1148`"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æâñı¬.
+E
+java:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æâñı¬.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æÓõ„üÿÿÿÿ8°Öóı¬.
+]	java:S125M"<This block of commented-out lines of code should be removed.(û¥Â»üÿÿÿÿ8Æâñı¬.
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(¯ËÉÀúÿÿÿÿ8Æâñı¬.
+c	java:S899!"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æâñı¬.
+J
+java:S1125}"(Remove the literal "true" boolean value.(Øßûîÿÿÿÿÿ8°Öóı¬.
+V	java:S106"9Replace this use of System.out or System.err by a logger.(Ö­¦8°Öóı¬.
+m	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÙà…8°Öóı¬.
+M
+java:S19052"+Remove this unnecessary cast to "Object[]".(¡á¨şÿÿÿÿ8Æâñı¬.
+L
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Æâñı¬.
+ˆ
+java:S2178@"fCorrect this "|" to "||" and extract the right operand to a variable if it should always be evaluated.(ÁÁĞıÿÿÿÿ8Æâñı¬.

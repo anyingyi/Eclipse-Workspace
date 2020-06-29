@@ -9,6 +9,75 @@ public class Methods {
 	 * 
 	 * @return best solution
 	 */
+	public static Solution basicABC() {
+		
+		int popSize=Simulations.popSize;
+		final int MAX_G=Simulations.MAX_G;
+		
+		Solution[] pop=new Solution[popSize];
+		Solution[] newPop=new Solution[popSize];
+		double[] fitness=new double[pop.length];
+		Solution best=new Solution();
+		for(int i=0;i<popSize;i++) {
+			pop[i]=new Solution();
+		}
+		
+		for (int q = 0; q < MAX_G; q++) {
+			int[] ids;
+			
+			//employed bees phase
+			for(int i=0;i<popSize;i++) {
+				
+				newPop[i]=ArtificialBeeColony.employedBee(pop[i],pop[Methods.rand.nextInt(popSize)]);
+				if(newPop[i].getCost()<pop[i].getCost()) {
+					pop[i]=newPop[i];
+					pop[i].trailCount=0;
+				}
+				else {
+					pop[i].trailCount++;
+					if(pop[i].trailCount>=Simulations.threshold) {
+						pop[i]=ArtificialBeeColony.scoutBee();
+					}
+				}
+				
+				//fitness
+				fitness[i]=pop[i].getCost();
+			}
+			
+			//onlooker bees phase
+			for(int i=0;i<popSize;i++) {
+				
+				ids=ArtificialBeeColony.rouletteWheel(fitness, 1);
+				newPop[ids[0]]=ArtificialBeeColony.employedBee(pop[ids[0]],pop[Methods.rand.nextInt(popSize)]);
+				if(newPop[ids[0]].getCost()<pop[ids[0]].getCost()) {
+					pop[ids[0]]=newPop[ids[0]];
+					pop[ids[0]].trailCount=0;
+				}
+				else {
+					pop[ids[0]].trailCount++;
+					if(pop[ids[0]].trailCount>=Simulations.threshold) {
+						pop[ids[0]]=ArtificialBeeColony.scoutBee();
+					}
+				}
+				fitness[ids[0]]=pop[ids[0]].getCost();
+			}
+				
+			for(int i=0;i<popSize;i++)
+				if(pop[i].getCost()<best.getCost()) {
+					best=pop[i];
+				}
+			
+		}
+		
+		return best;
+		
+	}
+	
+	/**
+	 * basic Cuckoo Search algorithm.
+	 * 
+	 * @return best solution
+	 */
 	public static Solution basicCuckoo() {
 		
 		int popSize=Simulations.popSize;
@@ -43,13 +112,16 @@ public class Methods {
 					ids=DifferentialEvolution.randomNum(popSize,2);
 					mutaVector[i]=CuckooSearch.localRandom(pop[i],pop[ids[0]],pop[ids[1]]);	
 					if(mutaVector[i].getCost()<pop[i].getCost()) {
-						pop[i]=mutaVector[i];
+						pop[i]=mutaVector[i].copy();
 					}
 				}
 
 				if(pop[i].getCost()<best.getCost()) {
-					best=pop[i];
+					best=pop[i].copy();
 				}
+			}
+			if(q%30==0) {
+				System.out.println("the times:"+q/30+"\t cost:"+best.getCost());
 			}
 		}
 		
@@ -74,7 +146,7 @@ public class Methods {
 		for(int i=0;i<popSize;i++) {
 			pop[i]=new Solution();
 		}
-		pop=DifferentialEvolution.oppoBasedPopInit(pop);
+		//pop=DifferentialEvolution.oppoBasedPopInit(pop);
 		
 		for (int q = 0; q < MAX_G; q++) {
 			for(int i=0;i<popSize;i++) {

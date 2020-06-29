@@ -1,0 +1,21 @@
+
+h	java:S116:"NRename this field "m_o" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùµ‚§øÿÿÿÿ
+`
+java:S11246"EReorder the modifiers to comply with the Java Language Specification.(Ý¤ÿ²úÿÿÿÿ
+[
+java:S11244"EReorder the modifiers to comply with the Java Language Specification.(ñî‰¬
+V	java:S125#"<This block of commented-out lines of code should be removed.(¶Þàšùÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÄÊÞŒ
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚúÔ¸øÿÿÿÿ
+h	java:S116;"SRename this field "m_matrix" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑªœÙ
+`
+java:S11245"EReorder the modifiers to comply with the Java Language Specification.(Þ½±‡ýÿÿÿÿ
+i	java:S116@"ORename this field "m_zM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ð’´þÿÿÿÿ
+c	java:S116?"NRename this field "m_z" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ¹—ç
+[
+java:S11247"EReorder the modifiers to comply with the Java Language Specification.(Ãí 
+f	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç±ø½
+V	java:S125!"<This block of commented-out lines of code should be removed.(åÙäˆøÿÿÿÿ
+E
+java:S1481e"(Remove this unused "sum" local variable.(Æß‘8 ‚•€­.
+]	java:S125k"<This block of commented-out lines of code should be removed.(¿®ƒÝüÿÿÿÿ8 ‚•€­.

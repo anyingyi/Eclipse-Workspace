@@ -1,0 +1,14 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÄÊŞŒ
+f	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë—³Ø
+U
+java:S1854R":Remove this useless assignment to local variable "result".(×Û­®ùÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(¶Şàšùÿÿÿÿ
+c	java:S116="NRename this field "m_z" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ¹—ç
+h	java:S1169"NRename this field "m_o" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùµ‚§øÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(åÙäˆøÿÿÿÿ
+`
+java:S11245"EReorder the modifiers to comply with the Java Language Specification.(½²Œµÿÿÿÿÿ
+[
+java:S11246"EReorder the modifiers to comply with the Java Language Specification.(Í–¡Ö
+]	java:S125X"<This block of commented-out lines of code should be removed.(†ÉéŠúÿÿÿÿ8ÙÚ”€­.
