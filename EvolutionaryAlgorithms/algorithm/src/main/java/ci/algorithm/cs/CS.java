@@ -4,22 +4,27 @@ import ci.EvolutionaryAlgorithm;
 import ci.Problem;
 import ci.Solution;
 import ci.problem.CEC2005;
-import ci.problem.common.Sphere;
+import ci.problem.common.*;
+import util.Chaos;
+import util.Statistic;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class CS extends EvolutionaryAlgorithm {
     private double pa;
     private double beta;
+    private double alpha0=0.01;
     private List<Solution> newNest;
+    private double threshold=1e-5;
 
     public CS(Problem problem, long maxFES, int popSize,double pa, double beta){
         super(problem,maxFES,popSize);
         this.pa=pa;
         this.beta=beta;
-
     }
+    
     protected void LevyRandomWalk(double sigma, double beta){
         double u, v, step, newx, currentx, bestx;
         int i, j;
@@ -30,7 +35,7 @@ public class CS extends EvolutionaryAlgorithm {
                 step = u / Math.pow(Math.abs(v), 1.0 / beta);
                 currentx = this.population.get(i).getVariableValue(j);
                 bestx = this.bestSolution.getVariableValue(j);
-                newx = currentx + 0.01 * step * this.randGenerator.nextGaussian() * (currentx - bestx);
+                newx = currentx + alpha0 * step * this.randGenerator.nextGaussian() * ( bestx-currentx);
                 newNest.get(i).setVariableValue(j, newx);
                 if (this.problem.isRepairSolution()) {
                     newNest.get(i).repairSolutionVariableValue(j);
@@ -69,6 +74,7 @@ public class CS extends EvolutionaryAlgorithm {
             if (newNest.get(i).getObjective(0) < population.get(i).getObjective(0)) {
                 population.set(i,newNest.get(i).copy());
             }
+            
         }
     }
 
@@ -85,21 +91,29 @@ public class CS extends EvolutionaryAlgorithm {
         }
         ifes = this.populationSize;
 
-        listMinf = new ArrayList<>(this.dimensionSize + 1);
-        for (int i = 0; i <= dimensionSize; i++) {
+        listMinf = new ArrayList<>(30 + 1);
+        for (int i = 0; i <= 30; i++) {
             listMinf.add(Double.MAX_VALUE);
         }
         this.sortPopulation();
         listMinf.set(0, population.get(0).getObjective(0));
         bestSolution = population.get(0).copy();
         int iter = 0;
-        int gen = (int) (this.maxFunctionEvaluations/ this.populationSize / 2 /this.dimensionSize);
+        int gen = (int) (this.maxFunctionEvaluations/ this.populationSize / 2 /30);
         double dSigmaValue =
                 Math.pow((Gamma(1 + beta) * Math.sin(Math.PI * beta / 2.0)) / (Gamma((1 + beta) / 2.0) * beta * Math.pow(2,
                         (beta - 1) / 2)),
                         1.0 / beta);
 
+        double[] circlemap= Chaos.circleMap(0.7,(int)maxFunctionEvaluations/ this.populationSize / 2);
+        double[] gaussmap=Chaos.gaussMap(0.7,(int)maxFunctionEvaluations/ this.populationSize / 2);
+
         while (ifes < maxFunctionEvaluations) {
+            //alpha0= randGenerator.nextDouble();
+            //alpha0=circlemap[iter];
+            //pa=gaussmap[iter];
+            //alpha0=Math.exp(-0.1*iter);
+
             LevyRandomWalk(dSigmaValue,beta);
             ifes = ifes + populationSize;
             selectPopulation();
@@ -113,10 +127,16 @@ public class CS extends EvolutionaryAlgorithm {
             }
             iter++;
             if (iter % gen ==0){
-                //listMinf.set(iter / gen, bestSolution.getObjective(0));
+                listMinf.set(iter / gen, bestSolution.getObjective(0));
                 //System.out.println(String.format("During %d iteration, and obtain the best fitness is %e", iter/gen,
                 //        bestSolution.getObjective(0)));
             }
+
+            /*
+            if(bestSolution.getObjective(0)<threshold){
+                System.out.println(iter);
+                break;
+            }*/
 
         }
         listMinf.set(listMinf.size()-1,bestSolution.getObjective(0));
@@ -139,11 +159,11 @@ public class CS extends EvolutionaryAlgorithm {
     }
 
     public static void main(String[] args) {
-        Problem problem =new Sphere(30);
-        //Problem problem=new CEC2005(3,30);
-        CS cs = new CS(problem, 30 * 10000, 30, 0.25, 1.5);
+        Problem problem =new Ackley(30);
+        //Problem problem=new CEC2005(2,30);
+        CS cs = new CS(problem, 30*2*5000, 30, 0.25, 1.5);
         cs.run();
-        System.out.println(cs.getBestSolution().getObjective(0)+"          "+cs.getListMinf().get(cs.getListMinf().size()-1));
+        System.out.println(cs.getBestSolution());
     }
 
 }

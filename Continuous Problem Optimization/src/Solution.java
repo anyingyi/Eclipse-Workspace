@@ -108,7 +108,7 @@ public class Solution implements Comparable<Solution> {
 	}
 	
 	public static void main(String[] args) {
-		Solution best=Methods.basicDE();
+		Solution best=Methods.basicCuckoo();
 		System.out.println(best);
 	}
 }

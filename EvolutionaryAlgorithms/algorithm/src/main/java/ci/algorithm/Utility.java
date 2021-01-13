@@ -34,7 +34,7 @@ public class Utility {
 
             //格式化浮点数据
             NumberFormat formatter = NumberFormat.getNumberInstance();
-            formatter.setMaximumFractionDigits(10);     //设置最大小数位为10；
+            formatter.setMaximumFractionDigits(200);     //设置最大小数位为200；
 
             //格式化日期数据
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -121,7 +121,7 @@ public class Utility {
         list.add(objects);
         list.add(objects);
         list.add(objects);
-        boolean Flag=createCsvFile(list,"G:\\CSVDir","csvFile");
+        boolean Flag=createCsvFile(list,"D:\\CSVDir","csvFile");
         if (Flag == true)
         {
             System.out.print("CSV文件创建成功！");

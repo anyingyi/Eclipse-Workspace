@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\eclipse-workspace\EvolutionaryTemp"/>
 			<item value="E:\eclipse-workspace\jMetal_jdk8"/>
 			<item value="E:\eclipse-workspace\ZYW"/>
 			<item value="E:\eclipse-workspace\CAP-first"/>
@@ -29,5 +30,7 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
 	</section>
 </section>

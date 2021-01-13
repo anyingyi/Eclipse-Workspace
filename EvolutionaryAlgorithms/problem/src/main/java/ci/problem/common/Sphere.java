@@ -10,7 +10,12 @@ public class Sphere extends Problem {
         super();
     }
 
-    /** Constructor */
+    /**
+     * x*={0,0,...,0};
+     * f*=0;
+     *
+     * @param numberOfVariables
+     */
     public Sphere(Integer numberOfVariables) {
         setNumberOfVariables(numberOfVariables);
         setName("Sphere");
@@ -21,8 +26,8 @@ public class Sphere extends Problem {
         upperLimit = new ArrayList<>(getNumberOfVariables()) ;
 
         for (int i = 0; i < getNumberOfVariables(); i++) {
-            lowerLimit.add(-100.0);
-            upperLimit.add(100.0);
+            lowerLimit.add(-5.0);//-100.0);
+            upperLimit.add(5.0);//100.0);
         }
         setLowerLimit(lowerLimit);
         setUpperLimit(upperLimit);
@@ -40,8 +45,8 @@ public class Sphere extends Problem {
         }
 
         double sum = 0.0 ;
-        for (int var = 0; var < numberOfVariables; var++) {
-            double value = x[var];
+        for (int i = 0; i < numberOfVariables; i++) {
+            double value = x[i];
             sum += value * value;
         }
 

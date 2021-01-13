@@ -34,4 +34,8 @@
 			<item value="E:\eclipse-workspace\New folder"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="FileSystemImportWizard">
+	</section>
 </section>

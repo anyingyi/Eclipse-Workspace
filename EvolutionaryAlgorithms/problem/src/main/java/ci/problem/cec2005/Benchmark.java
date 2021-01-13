@@ -59,7 +59,7 @@ import java.util.logging.Level;
 
 public class Benchmark {
   // Fixed (class) parameters
-  static final public String CEC2005SUPPORTDATADIRECTORY = "cec2005/supportData" ;
+  static final public String CEC2005SUPPORTDATADIRECTORY = "./cec2005/supportData" ;
   static final private String CEC2005Code = "ci.problem.cec2005" ;
   static final public int NUM_TEST_FUNC = 25;
   static final public String DEFAULT_FILE_BIAS = CEC2005SUPPORTDATADIRECTORY + "/fbias_data.txt";
@@ -139,6 +139,7 @@ public class Benchmark {
   //	If the Benchmark class is executed as a stand-alone application,
   //	its job is to run the org.uma.test on all the org.uma.test functions.
   static public void main(String args[])  {
+	  System.out.println(DEFAULT_FILE_BIAS);
     Benchmark theBenchmark = new Benchmark();
     theBenchmark.runTest(0);
   }

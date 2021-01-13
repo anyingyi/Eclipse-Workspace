@@ -104,7 +104,7 @@ public class Methods {
 				//global random walk
 				mutaVector[i]=CuckooSearch.makeMutaVector(pop[i],best);
 				if(mutaVector[i].getCost()<pop[i].getCost()) {
-					pop[i]=mutaVector[i];
+					pop[i]=mutaVector[i].copy();
 				}
 				
 				//local random walk

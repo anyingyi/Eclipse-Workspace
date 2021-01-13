@@ -167,7 +167,8 @@ public abstract class Solution implements Comparable<Solution> {
 	
 	public static void main(String[] args) {
 		String name = "09Am15";
-    	String fileName = (new File("")).getAbsolutePath() + "/datas/Mao24/" + name + ".txt";
+    	//String fileName = (new File("")).getAbsolutePath() + "/datas/Mao24/" + name + ".txt";
+		String fileName = "../datas/Mao24/" + name + ".txt";
     	Problem problem = null;
     	try {
     	    problem = Problem.readProblem(fileName);
@@ -182,6 +183,7 @@ public abstract class Solution implements Comparable<Solution> {
     	
     	long end_time = System.currentTimeMillis();
     	
+    	System.out.println(fileName);
         System.out.println(best);
         System.out.println(end_time-start_time);
         best.save((new File("")).getAbsolutePath() + "/results/" + name + ".txt" );

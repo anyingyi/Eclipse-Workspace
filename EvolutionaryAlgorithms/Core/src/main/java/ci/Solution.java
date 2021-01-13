@@ -36,6 +36,10 @@ public class Solution {
     public double getVariableValue(int index) {
         return variables.get(index);
     }
+    
+    public List<Double> getVariable() {
+    	return variables;
+    }
 
     public double getUpperBound(int index) {
         return problem.getUpperBound(index);
@@ -61,6 +65,8 @@ public class Solution {
 
     }
 
+
+
     /**
      * Copy constructor
      */
@@ -73,6 +79,34 @@ public class Solution {
 
     public Solution copy() {
         return new Solution(this);
+    }
+
+    public void repairSolutionVariableValueOpposite(int jth) {
+        double alpha= randGenerator.nextDouble();
+        if (jth >= 0 && jth < problem.getNumberOfVariables()) {
+            if (getVariableValue(jth) > getUpperBound(jth)) {
+                double value=alpha*(getUpperBound(jth)-getVariableValue(jth))+getUpperBound(jth);
+                setVariableValue(jth, value);
+            }
+            if (getVariableValue(jth) < getLowerBound(jth)) {
+                double value=alpha*(getLowerBound(jth)-getVariableValue(jth))+getLowerBound(jth);
+                setVariableValue(jth, value);
+            }
+        }
+    }
+
+    public void repairSolutionVariableValueDE(int jth) {
+        double alpha= randGenerator.nextDouble();
+        if (jth >= 0 && jth < problem.getNumberOfVariables()) {
+            if (getVariableValue(jth) > getUpperBound(jth)) {
+                double value=alpha*(getUpperBound(jth)-getVariableValue(jth))+getUpperBound(jth);
+                setVariableValue(jth, value);
+            }
+            if (getVariableValue(jth) < getLowerBound(jth)) {
+                double value=alpha*(getLowerBound(jth)-getVariableValue(jth))+getLowerBound(jth);
+                setVariableValue(jth, value);
+            }
+        }
     }
 
 
@@ -99,15 +133,50 @@ public class Solution {
         public int compare(Solution o1, Solution o2) {
             double fit1 = o1.getObjective(0);
             double fit2 = o2.getObjective(0);
+
             if (fit1 < fit2) {
                 return -1;
-            } else if (fit1 == fit2) {
-                return 0;
-            } else {
+            } else if (fit1 > fit2) {
                 return 1;
+            } else {
+                return 0;
             }
+
+
         }
     };
+    
+    @Override
+	public String toString(){
+		String str="[";
+		for(int i=0;i<problem.getNumberOfVariables();i++) {
+			str+=this.getVariableValue(i)+" ";
+		}
+		str+="]"+"\ncost:";
+		for(int i=0;i<problem.getNumberOfObjectives();i++) {
+			str+=String.format("%e\t",this.getObjective(i));
+		}
+		
+		return str;
+	}
 
 
+    public Solution neighbor(List<Solution> population) {
+        Solution temp=this.copy();
+        double pa=0.2;
+        int r1=randGenerator.nextInt(population.size());
+        int r2=randGenerator.nextInt(population.size());
+        Solution randSolution1=population.get(r1);
+        Solution randSolution2=population.get(r2);
+
+        for(int j=0;j<this.problem.numberOfVariables;j++){
+            if(randGenerator.nextDouble()<pa){
+                double value=this.getVariableValue(j)+ randGenerator.nextDouble()*
+                        (randSolution1.getVariableValue(j)-randSolution2.getVariableValue(j));
+                temp.setVariableValue(j,value);
+            }
+            problem.evaluate(temp);
+        }
+        return temp;
+    }
 }
